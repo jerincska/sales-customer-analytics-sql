@@ -6,8 +6,8 @@ Purpose:
     - This report consolidates key customer metrics and behaviors
 
 Highlights:
-    1. Gathers essential fields such as names, ages, and transactio
-	2. Segments customers into categories (VIP, Regular, New) and a
+    1. Gathers essential fields such as names, ages, and transaction
+	2. Segments customers into categories (VIP, Regular, New) 
     3. Aggregates customer-level metrics:
 	   - total orders
 	   - total sales
