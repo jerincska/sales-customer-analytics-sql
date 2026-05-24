@@ -78,6 +78,13 @@ Several patterns in these views are intentionally defensive against common SQL p
 - **NULL handling** — `NULLIF(quantity, 0)` inside the `Avg_Selling_Price` calculation prevents a divide-by-zero crash if a row has zero quantity, returning NULL instead, which propagates cleanly through `AVG`.
 
 ## Repository Structure
+```
+setup/
+  00_init_database.sql              — Database, schema, and table setup (adapted from Baraa's project)
+analysis/
+  06_view_gold_report_customers.sql — Customer-level reporting view (my work)
+  07_view_gold_report_products.sql  — Product-level reporting view (my work)
+```
 
 ## Dataset Credit
 
