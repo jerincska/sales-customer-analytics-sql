@@ -77,18 +77,7 @@ Several patterns in these views are intentionally defensive against common SQL p
 
 - **NULL handling** — `NULLIF(quantity, 0)` inside the `Avg_Selling_Price` calculation prevents a divide-by-zero crash if a row has zero quantity, returning NULL instead, which propagates cleanly through `AVG`.
 
-## How to Run
-
-1. Set up a SQL Server instance with a `gold` schema containing:
-   - `gold.dim_customers` — customer dimension
-   - `gold.dim_products` — product dimension
-   - `gold.fact_sales` — sales fact table
-2. Run each `.sql` file to create the corresponding view
-3. Query the views like any table:
-```sql
-   SELECT * FROM gold.report_customers WHERE Customer_Segment = 'VIP';
-   SELECT * FROM gold.report_products WHERE product_segment = 'High-Performer';
-```
+## Repository Structure
 
 ## Dataset Credit
 
